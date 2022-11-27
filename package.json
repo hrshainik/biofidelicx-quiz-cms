@@ -11,13 +11,13 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.4.6",
-    "@strapi/plugin-users-permissions": "4.4.6",
-    "@strapi/plugin-i18n": "4.4.6",
+    "@strapi/plugin-i18n": "4.4.7",
+    "@strapi/plugin-users-permissions": "4.4.7",
+    "@strapi/strapi": "4.4.7",
     "better-sqlite3": "7.4.6"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Habibur Rahman"
   },
   "strapi": {
     "uuid": "1fce15df-47a5-4962-8aa3-4258ac250e19"

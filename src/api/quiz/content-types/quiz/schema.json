@@ -15,7 +15,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string"
     },
     "description": {
@@ -25,6 +25,15 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::question.question"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "quiz_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::quiz-category.quiz-category"
     }
   }
 }

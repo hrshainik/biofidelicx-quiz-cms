@@ -4,7 +4,7 @@
   "info": {
     "singularName": "quiz",
     "pluralName": "quizzes",
-    "displayName": "Quiz",
+    "displayName": "Quizzes",
     "description": ""
   },
   "options": {
@@ -16,21 +16,24 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true,
+      "maxLength": 200
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     },
     "questions": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::question.question"
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
-    },
-    "quiz_category": {
+    "category": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::quiz-category.quiz-category"

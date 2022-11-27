@@ -2,27 +2,28 @@
   "kind": "collectionType",
   "collectionName": "questions",
   "info": {
+    "name": "questions",
+    "description": "",
     "singularName": "question",
     "pluralName": "questions",
-    "displayName": "Question",
-    "description": ""
+    "displayName": "Questions"
   },
   "options": {
-    "draftAndPublish": true,
-    "timestamps": true,
     "increments": true,
-    "comment": ""
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "text": {
+    "questionText": {
       "type": "string",
       "required": true
     },
-    "quiz": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::quiz.quiz"
+    "answerOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "answers.answers",
+      "required": true
     }
   }
 }

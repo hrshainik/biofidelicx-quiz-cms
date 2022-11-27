@@ -37,6 +37,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::quiz-category.quiz-category"
+    },
+    "time": {
+      "type": "integer",
+      "required": true
     }
   }
 }
